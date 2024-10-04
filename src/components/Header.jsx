@@ -62,7 +62,7 @@ const Header = () => {
         {/* this is movie view of navbar */}
         <div onClick={() => setOpen(false)}
           className={`absolute md:hidden lg:hidden transfrom transition-transform ease-in-out delay-150 duration-100 ${
-            open ? " top-[70%] w-[95%] m-auto bg-customWhite h-screen text-center" : "top-[-105%]"
+            open ? " top-[70%] w-[100%] left-0 bg-customBg h-screen text-center" : "top-[-105%]"
           }`}
         >
           <ul className={`flex flex-col ${open?" text-[25px] h-[50%] justify-around items-center": ""}`}>
