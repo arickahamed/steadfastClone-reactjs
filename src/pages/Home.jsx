@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "../components/Layout";
-import "../styles/landing.css";
 import { cardData } from "../Assets/cardData";
 import riderImage from "../images/steadfast_rider.png";
 
