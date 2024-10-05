@@ -1,18 +1,18 @@
-import React, { useState } from 'react'
-import { filterData } from '../Assets/filterData';
+import React, { useState } from "react";
+import { filterData } from "../Assets/filterData";
 
 const Filter = () => {
-    const [data, setData] = useState(filterData);
-    const [activeBtn, setActiveBtn] = useState("all");
+  const [data, setData] = useState(filterData);
+  const [activeBtn, setActiveBtn] = useState("all");
 
-    const handleFilter = (categoryName) => {
-        setActiveBtn(categoryName);
-        if(categoryName == "all") {
-            setData(filterData);
-        }else {
-            setData(filterData.filter(info=>info.category == categoryName));
-        }
+  const handleFilter = (categoryName) => {
+    setActiveBtn(categoryName);
+    if (categoryName === "all") {
+      setData(filterData);
+    } else {
+      setData(filterData.filter((info) => info.category === categoryName));
     }
+  };
 
   return (
     <main className="w-full my-3 py-4">
@@ -22,7 +22,7 @@ const Filter = () => {
           <button
             onClick={() => handleFilter("all")}
             className={`${
-              activeBtn == "all"
+              activeBtn === "all"
                 ? "text-customWhite bg-customCyan "
                 : "text-customBlack border border-customCyan"
             }   py-1 px-3 rounded-md`}
@@ -32,7 +32,7 @@ const Filter = () => {
           <button
             onClick={() => handleFilter("laptop")}
             className={`${
-              activeBtn == "laptop"
+              activeBtn === "laptop"
                 ? "text-customWhite bg-customCyan "
                 : "text-customBlack border border-customCyan"
             }   py-1 px-3 rounded-md`}
@@ -42,7 +42,7 @@ const Filter = () => {
           <button
             onClick={() => handleFilter("tab")}
             className={`${
-              activeBtn == "tab"
+              activeBtn === "tab"
                 ? "text-customWhite bg-customCyan "
                 : "text-customBlack border border-customCyan"
             }   py-1 px-3 rounded-md`}
@@ -52,7 +52,7 @@ const Filter = () => {
           <button
             onClick={() => handleFilter("phone")}
             className={`${
-              activeBtn == "phone"
+              activeBtn === "phone"
                 ? "text-customWhite bg-customCyan "
                 : "text-customBlack border border-customCyan"
             }   py-1 px-3 rounded-md`}
@@ -80,6 +80,6 @@ const Filter = () => {
       </div>
     </main>
   );
-}
+};
 
 export default Filter;
