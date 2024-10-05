@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import { cardData } from "../Assets/cardData";
 import riderImage from "../images/steadfast_rider.png";
+import Filter from "../components/Filter";
 
 const Home = () => {
   const bgImg = {
@@ -40,6 +41,7 @@ const Home = () => {
             );
           })}
         </div>
+        <Filter />
       </div>
     </Layout>
   );
