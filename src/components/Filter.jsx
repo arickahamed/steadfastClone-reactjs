@@ -23,7 +23,7 @@ const Filter = () => {
             onClick={() => handleFilter("all")}
             className={`${
               activeBtn === "all"
-                ? "text-customWhite bg-customCyan "
+                ? "text-customWhite bg-customCyan shadow-md "
                 : "text-customBlack border border-customCyan"
             }   py-1 px-3 rounded-md`}
           >
@@ -33,7 +33,7 @@ const Filter = () => {
             onClick={() => handleFilter("laptop")}
             className={`${
               activeBtn === "laptop"
-                ? "text-customWhite bg-customCyan "
+                ? "text-customWhite bg-customCyan shadow-md"
                 : "text-customBlack border border-customCyan"
             }   py-1 px-3 rounded-md`}
           >
@@ -43,7 +43,7 @@ const Filter = () => {
             onClick={() => handleFilter("tab")}
             className={`${
               activeBtn === "tab"
-                ? "text-customWhite bg-customCyan "
+                ? "text-customWhite bg-customCyan shadow-md"
                 : "text-customBlack border border-customCyan"
             }   py-1 px-3 rounded-md`}
           >
@@ -53,9 +53,9 @@ const Filter = () => {
             onClick={() => handleFilter("phone")}
             className={`${
               activeBtn === "phone"
-                ? "text-customWhite bg-customCyan "
+                ? "text-customWhite bg-customCyan shadow-md"
                 : "text-customBlack border border-customCyan"
-            }   py-1 px-3 rounded-md`}
+            }   py-1 px-3 rounded-md `}
           >
             phone
           </button>
