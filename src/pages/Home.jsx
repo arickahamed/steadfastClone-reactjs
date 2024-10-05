@@ -2,12 +2,19 @@ import React from "react";
 import Layout from "../components/Layout";
 import "../styles/landing.css";
 import { cardData } from "../Assets/cardData";
+import riderImage from "../images/steadfast_rider.png";
 
 const Home = () => {
+  const bgImg = {
+    backgroundImage: `url(${riderImage})`,
+    backgroundSize: "contain",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat"
+  }
   return (
     <Layout>
-      <div className=" md:w-[90%] ld:w-[80%] mt-3 mx-auto border border-red-500">
-        <div className=" w-[90%] md:w-[80%] lg:w-[75%] text-center m-auto bgImg">
+      <div className=" md:w-[90%] ld:w-[80%] mt-3 mx-auto">
+        <div style={bgImg}  className=" w-[90%] md:w-[80%] lg:w-[75%] text-center m-auto">
           <h3 className="text-[25px] font-bold">
             We Deliver <br /> Parcel on Time with <br /> no Hassle
           </h3>
