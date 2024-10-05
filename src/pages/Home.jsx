@@ -6,7 +6,7 @@ import { cardData } from "../Assets/cardData";
 const Home = () => {
   return (
     <Layout>
-      <div className=" md:w-[90%] ld:w-[80%] mt-3 mx-auto">
+      <div className=" md:w-[90%] ld:w-[80%] mt-3 mx-auto border border-red-500">
         <div className=" w-[90%] md:w-[80%] lg:w-[75%] text-center m-auto bgImg">
           <h3 className="text-[25px] font-bold">
             We Deliver <br /> Parcel on Time with <br /> no Hassle
