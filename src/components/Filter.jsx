@@ -18,7 +18,7 @@ const Filter = () => {
     <main className="w-full my-3 py-4">
       <div>
         <p className="text-center pb-3">Take a look</p>
-        <div className="flex justify-between md:justify-around w-[80%] md:w-[70%] lg:w-[60%] pb-4 mx-auto">
+        <div className="flex justify-between md:justify-around w-[80%] md:w-[65%] lg:w-[40%] pt-2 pb-4 mx-auto">
           <button
             onClick={() => handleFilter("all")}
             className={`${
