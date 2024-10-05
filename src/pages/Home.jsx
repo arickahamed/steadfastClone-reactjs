@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
-import "./Home.css";
+import "../styles/Home.css";
 import { cardData } from "../Assets/cardData";
 
 const Home = () => {
